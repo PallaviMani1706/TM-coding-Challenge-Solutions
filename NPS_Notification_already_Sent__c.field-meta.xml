@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NPS_Notification_already_Sent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>this flag indicates whether the customer as been notified with NPS email</description>
+    <externalId>false</externalId>
+    <label>NPS Notification already Sent ?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>
