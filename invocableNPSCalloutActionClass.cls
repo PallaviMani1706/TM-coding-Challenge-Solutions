@@ -1,5 +1,14 @@
 /*
  * Purpose: to do HTTP callouts to a NPS Service, whenever an Order got fulfilled and send notification to customer
+* Methods:
+* callNPSCalloutRequest: invokable method to use in flow
+* fetchOrders : to query and return the list of order records for the order IDs passed from flow
+* preparePayloads: to prepare the request body or payload to be sent during the request to NPS
+* chunkPayloads: as the NPS system accepts only 30 order at once so chunkifying the records and passing each 3o chunks at once
+* processChunks: returns the chunked record lists in the String payload format to pass it to the request body
+* makeNPSCalloutForNotification: future method makes callout and update operation
+* buildHttpRequest: return the request body in the format the callout requires
+* RequestPayload wrapper class: used to format the variables required for request body
 */
 public class invocableNPSCalloutActionClass {
     private static final Integer CHUNK_SIZE = 30; 
